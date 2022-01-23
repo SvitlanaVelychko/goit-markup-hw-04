@@ -4,7 +4,9 @@
 /* белый цвет: #FFFFFF */
 /* черный цвет: #000000 */
 /* вторичный цвет фона страницы: #F5F4FA */
-/* цвет фона футера, героя: #2F303A */
+/* цвет фона герой: #C4C4C4 */
+/* цвет градиента герой: rgba(47, 48, 58, 0.4) */ 
+/* цвет фона футера: #2F303A */
 /* цвет фона кнопки заказать услугу: #188CE8 */
 /* цвет текста почты и телефона в футере: rgba(255, 255, 255, 0.6) */
 /* цвет канта карточек проекта: #EEEEEEE */
@@ -18,6 +20,8 @@
     --white-color: #FFFFFF;
     --black-color: #000000;
     --secondary-background-color: #F5F4FA;
+    --background-color-hero: #C4C4C4;
+    --background-color-gradient: rgba(47, 48, 58, 0.4);
     --background-footer-color: #2F303A;
     --background-color-btn-order: #188CE8;
     --text-adress-color: rgba(255, 255, 255, 0.6);
@@ -173,7 +177,7 @@ a {
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: var(--background-footer-color);
+    background-color: var(--background-color-hero);
     text-align: center;
 }
 
@@ -211,6 +215,20 @@ a {
 
 .hero-btn:hover, .hero-btn:focus {
     background-color: var(--background-color-btn-order);
+}
+
+/* Overlay */
+
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(to right, var(--background-color-gradient), var(--background-color-gradient)), 
+    url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /* Section */
