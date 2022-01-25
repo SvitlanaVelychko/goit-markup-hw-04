@@ -117,6 +117,7 @@ a {
 .site-nav {
     display: flex;
     margin-left: 93px;
+    align-items: center;
 }
 
 .site-nav .item + .item {
@@ -146,6 +147,7 @@ a {
 .header-list {
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 
 .header-list .item + .item {
@@ -172,10 +174,18 @@ a {
     width: 16px;
     height: 12px;
     margin-right: 10px;
+    fill: currentColor;
 }
 
 .header-list .link-tel:hover, .header-list .link-tel:focus {
     color: var(--accent-color);
+}
+
+.tel-icon {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
 }
 
 /* Герой */
