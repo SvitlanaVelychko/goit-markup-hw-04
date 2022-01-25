@@ -268,12 +268,23 @@ a {
     display: flex;
 }
 
-.feature-list .item {
+.feature-item {
     width: 270px;
 }
 
-.feature-list .item + .item {
+.feature-item + .feature-item {
     margin-left: var(--card-gap);
+}
+
+.feature-icons {
+    display: inline-flex;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--secondary-background-color);
+    background-position: center;
+}
+.antenna-icon {
+    background-position: center;
 }
 
 .feature-list .title {
