@@ -370,21 +370,24 @@ a {
 }
 
 .social-links .item {
-    display: flex;
+    display: inline-flex;
     width: 44px;
     height: 44px;
     justify-content: center;
     align-items: center;
-    background-color: var(--white-color);
     border-radius: 50%;
 }
 
-.social-links .item:hover {
+.social-links .item:hover, .social-links .item:focus {
     background-color: var(--accent-color);
 }
 
 .social-links .item + .item {
     margin-left: 10px;
+}
+
+.team-social-link {
+    display: block;
 }
 
 .team-social-link .icon {
@@ -394,7 +397,7 @@ a {
     fill: var(--icon-color);
 }
 
-.team-social-link .icon:hover {
+.team-social-link .icon:hover, .team-social-link .icon:focus {
     fill: var(--white-color);
 }
 
