@@ -11,6 +11,7 @@
 /* цвет текста почты и телефона в футере: rgba(255, 255, 255, 0.6) */
 /* цвет канта карточек проекта: #EEEEEEE */
 /* цвет границы хэдера: #ECECEC */
+/* цвет иконок социальных сетей в нашей команде: #AFB1B8 */
 
 /* -----Общие стили----- */
 :root {
@@ -27,6 +28,7 @@
     --text-adress-color: rgba(255, 255, 255, 0.6);
     --border-project-color: #EEEEEE;
     --border-header-color: #ECECEC;
+    --icon-color: #AFB1B8;
 
     --card-gap: 30px;
 }
@@ -268,23 +270,25 @@ a {
     display: flex;
 }
 
-.feature-item {
+.feature-list .item {
     width: 270px;
 }
 
-.feature-item + .feature-item {
+.feature-list .item + .item {
     margin-left: var(--card-gap);
 }
 
 .feature-icons {
-    display: inline-flex;
+    display: block;
     height: 120px;
-    margin-bottom: 30px;
+    padding: 25px 100px;
+    margin-bottom: var(--card-gap);
     background-color: var(--secondary-background-color);
-    background-position: center;
 }
-.antenna-icon {
-    background-position: center;
+
+.feature-icons .icon {
+    width: 70px;
+    height: 70px;
 }
 
 .feature-list .title {
@@ -316,7 +320,10 @@ a {
 /* Наша команда */
 
 .team {
+    max-width: 1600px;
     background-color: var(--secondary-background-color);
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .team-list {
@@ -351,9 +358,44 @@ a {
 }
 
 .team-position {
-font-size: 16px;
-line-height: 1.19;
-text-align: center;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links .item {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+    border-radius: 50%;
+}
+
+.social-links .item:hover {
+    background-color: var(--accent-color);
+}
+
+.social-links .item + .item {
+    margin-left: 10px;
+}
+
+.team-social-link .icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: var(--icon-color);
+}
+
+.team-social-link .icon:hover {
+    fill: var(--white-color);
 }
 
 /* Footer */
