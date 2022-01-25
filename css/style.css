@@ -168,6 +168,12 @@ a {
     color: var(--accent-color);
 }
 
+.mail-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+
 .header-list .link-tel:hover, .header-list .link-tel:focus {
     color: var(--accent-color);
 }
@@ -175,9 +181,18 @@ a {
 /* Герой */
 
 .hero {
+    max-width: 1600px;
+    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: var(--background-color-hero);
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--background-color-hero);  
+    background-image: linear-gradient(to right, var(--background-color-gradient), var(--background-color-gradient)), 
+    url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     text-align: center;
 }
 
@@ -215,20 +230,6 @@ a {
 
 .hero-btn:hover, .hero-btn:focus {
     background-color: var(--background-color-btn-order);
-}
-
-/* Overlay */
-
-.overlay {
-    max-width: 1600px;
-    height: 600px;
-    margin-right: auto;
-    margin-left: auto;
-    background-image: linear-gradient(to right, var(--background-color-gradient), var(--background-color-gradient)), 
-    url(../images/hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 /* Section */
