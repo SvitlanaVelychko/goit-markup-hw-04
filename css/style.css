@@ -87,7 +87,7 @@ a {
 
 /*-----Стили вебстудии----- */
 
-/* верхняя линия */
+/* Верхняя линия */
 
 .header {
     border-bottom: 1px solid var(--border-header-color);
@@ -279,9 +279,10 @@ a {
 }
 
 .feature-icons {
-    display: block;
+    display: flex;
     height: 120px;
-    padding: 25px 100px;
+    justify-content: center;
+    align-items: center;
     margin-bottom: var(--card-gap);
     background-color: var(--secondary-background-color);
 }
@@ -383,6 +384,7 @@ a {
     
     color: var(--icon-color);
 }
+
 .team-social-link:hover, .team-social-link:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
@@ -392,6 +394,18 @@ a {
     width: 20px;
     height: 20px;
     fill: currentColor;
+}
+
+/* Постоянные клиенты */
+
+.clients {
+    display: flex;
+    margin-left: calc(-1 * var(--card-gap));
+}
+
+.clients .item {
+    flex-basis: calc(100% / 6 - var(--card-gap));
+    margin-left: var(--card-gap);
 }
 
 /* Footer */
