@@ -175,8 +175,6 @@ a {
 }
 
 .mail-icon {
-    width: 16px;
-    height: 12px;
     margin-right: 10px;
     fill: currentColor;
 }
@@ -186,8 +184,6 @@ a {
 }
 
 .tel-icon {
-    width: 10px;
-    height: 16px;
     margin-right: 10px;
     fill: currentColor;
 }
@@ -289,11 +285,6 @@ a {
     background-color: var(--secondary-background-color);
 }
 
-.feature-icons .icon {
-    width: 70px;
-    height: 70px;
-}
-
 .feature-list .title {
     margin-bottom: 10px;
 
@@ -393,8 +384,6 @@ a {
 }
 
 .team-social-link .icon {
-    width: 20px;
-    height: 20px;
     fill: currentColor;
 }
 
@@ -427,8 +416,6 @@ a {
     color: var(--accent-color);
 }
 .client-icon {
-    width: 106px;
-    height: 60px;
     fill: currentColor;
 }
 
@@ -534,10 +521,7 @@ a {
 }
 
 .footer-social .icon {
-    width: 20px;
-    height: 20px;
     fill: currentColor;
-
 }
 
 
